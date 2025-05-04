@@ -72,8 +72,8 @@ final class LoggingFilePropertyManager implements FilePropertyManagerInterface
         }
 
         $context = [
-            'type' => $result->type->toString(),
-            'action' => $result->action->toString(),
+            'type' => $result->type->getString(),
+            'action' => $result->action->getString(),
             'class' => $result->class,
             'property' => $result->property,
             'scopeClass' => $result->scopeClass,
